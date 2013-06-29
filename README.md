@@ -11,8 +11,6 @@ Make sure you have php with xml styling installed
 
 Installation
 ------------
-* mkdir /var/www/minecraftdownloads
-* cd /var/www/minecraftdownloads
 * git https://github.com/john-clark/minecraftdownload.git
 
 Open your webbrowser to:
