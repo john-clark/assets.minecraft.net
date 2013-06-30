@@ -1,7 +1,8 @@
-minecraftdownload
-=================
+assets.minecraft.net
+====================
 
-assets.minecraft.net php xsl transformation page
+make a local mirror of assets.minecraft.net 
+using bash with a php xsl transformation webpage
 
 REQUIREMENTS
 ------------
@@ -11,7 +12,7 @@ Make sure you have php with xml styling installed
 
 Installation
 ------------
-* git https://github.com/john-clark/minecraftdownload.git
+* git https://github.com/john-clark/assets.minecraft.net.git
 
 Open your webbrowser to:
 http://yourserver/minecraftdownloads
@@ -20,3 +21,5 @@ Troubleshooting
 ---------------
 Edit index.php and comment out the http...xml line and
 uncomment the included assets.minecraft.xml line.
+
+* Note: Tested on debian wheezy
