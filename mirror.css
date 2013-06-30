@@ -1,0 +1,17 @@
+#header {
+    height: 29px;
+    overflow: hidden;
+    }
+/* Tab Bar */
+#bar a{
+ padding:6px 12px; 
+ background:white; 
+ text-decoration:none; 
+ font-size:24pt; 
+ font-weight:bold;
+ }
+#bar a:hover{color:#003366;}
+/* Content Layers */
+#container{background:darkgray; padding:10px;}
+div.main div {display: none}
+div.main div:target {display: block}

@@ -4,17 +4,17 @@ read_dom () {
     local IFS=\>
     read -d \< ENTITY CONTENT
 }
-if ! [ -f assets ]; then
-  echo 'mkdir assets' >mirror.sh
+if ! [ -f local ]; then
+  echo 'mkdir local' >mirror.sh
 fi
 while read_dom; do
     if [[ $ENTITY = Key ]]; then
       case $CONTENT in
       */)
-          echo 'mkdir assets/'$CONTENT
+          echo 'mkdir local/'$CONTENT
           ;;
       *)
-          echo 'curl -s http://s3.amazonaws.com/assets.minecraft.net/'$CONTENT' -o assets/'$CONTENT
+          echo 'curl -s http://s3.amazonaws.com/assets.minecraft.net/'$CONTENT' -o local/'$CONTENT
           ;;
       esac
     fi
@@ -24,7 +24,7 @@ chmod +x mirror.sh
 read -p 'Do you want to start the mirror now? [yn] ' a
 if [[ $a = y ]] ; then
   ./mirror.sh
-  du -ch assets |grep total
+  du -ch local |grep total
 else
   echo 'Run mirror.sh' to get the files
 fi
