@@ -12,7 +12,7 @@ Installation
 ------------
 * git https://github.com/john-clark/assets.minecraft.net.git
 * run createmirror.sh
-* Open your webbrowser to: http://yourserver/minecraftdownloads
+* Open your webbrowser to: http://yourserver/minecraftdownload/mirror.phps
 
 Troubleshooting
 ---------------

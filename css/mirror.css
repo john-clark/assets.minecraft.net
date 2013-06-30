@@ -1,0 +1,42 @@
+   /* Begin Navigation Bar Styling */
+   #nav {
+      width: 100%;
+      float: left;
+      margin: 0 0 0 0;
+      padding: 0;
+      list-style: none;
+      background-color: #f2f2f2;
+      border-bottom: 1px solid #ccc; 
+      border-top: 1px solid #ccc; }
+   #nav li {
+      float: left; }
+   #nav li a {
+      display: block;
+      padding: 10px 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #069;
+      border-right: 1px solid #ccc; }
+   #nav li a:hover {
+      color: #c00;
+      background-color: #fff; }
+   /* End navigation bar styling. */
+   
+   /* This is just styling for this specific page. */
+   #wrap {
+      width: 600px;
+      margin: 0 auto;
+      background-color: #fff; }
+   h1 {
+      font-size: 1.5em;
+      padding: 1em 12px;
+      color: white;
+      background-color: #069;
+      margin: 0; }
+   #content {
+	background-color: #eee;
+	padding: 0 5px 5px; }
+   #container{ 
+	padding:10px;}
+   div.main div {display: none}
+   div.main div:target {display: block}
