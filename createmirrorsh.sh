@@ -23,7 +23,8 @@ done < assets.minecraft.xml >>mirror.sh
 chmod +x mirror.sh
 read -p 'Do you want to start the mirror now? [yn] ' a
 if [[ $a = y ]] ; then
-  mirror.sh
+  ./mirror.sh
+  du -ch assets |grep total
 else
   echo 'Run mirror.sh' to get the files
 fi
